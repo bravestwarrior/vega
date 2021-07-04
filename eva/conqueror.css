@@ -1,0 +1,37 @@
+    /*absolute */
+    .barra {width: 100%;
+    background-color:cornflowerblue;
+    height: 5vw;
+    margin-top: -5vw;
+    position: fixed;}
+    .logo {height: 5vw;
+    padding-left: 1vw;}
+         
+
+    div {
+        display: block;
+        position: absolute;
+        background: seagreen;
+    }
+    body {padding-top: 5vw;}
+    
+    div div {
+        width: 75px;
+        height: 75px;
+        background: yellow;}
+    
+    .contenedor {
+        position: relative;
+        border: 4px solid red;
+        margin: 50px 50px;
+        height: 400px;
+        width: 400px;}
+    
+        .caja_1 {left: 0;}
+    
+        .caja_2 {right: 0;}
+    
+        .caja_3 {bottom: 0;}
+        
+        .caja_4 {right: 0; bottom: 0;}
+        .caja_5 {right: 0; left: 0; top: 0; bottom: 0; margin: auto;}

@@ -1,0 +1,135 @@
+
+ #connor {color: red;
+  display: inline;}
+  
+  
+  .form {display: inline;}
+
+ .form__input--angel {
+     color:floralwhite;}
+
+ .form__input--alex {
+     color: chocolate;}
+
+ .form__input--joe {
+     color: darkblue;}
+
+ .form__input--kai {
+     color: darkcyan;}
+
+ .form__h2--annie {
+    font-size: 3em; color: fuchsia;
+    display: inline;}
+
+ .h2--edgar {
+     color: brown; 
+     background-color: burlywood;
+     font-size: 8vw;
+     font-family: 'Hanalei', 'Hachi Maru Pop';
+     display:inline-block;
+     padding: 2vw 15vw 3vw 15vw ;
+     box-sizing:border-box;
+     
+     line-height: 14vw;
+     text-align: center;
+     margin-left: 10vw; 
+     border-radius: 5vw;
+     border: 0.5vw blue solid;
+     box-shadow: 10px 7px 8px 0 black;
+     text-shadow: 3px 2px 5px  black;
+     transform:rotate(360deg);
+    margin:auto ;}
+
+
+    .whisky{width: 10vw;
+height: 10vw;
+background: greenyellow;
+border-radius: 5vw;
+border: 0.5vw black solid;
+margin: 3vw;
+box-shadow: 10px 10px 10px black;
+display: inline-block;}
+.vodka{width: 10vw;
+height: 10vw;
+background: red; 
+font-size: 14vw;
+display:inline-block;
+border-radius: 5vw;
+border: 0.5vw black solid;
+margin-bottom: 3vw ;
+margin-left: 5vw;
+margin-right: 50vw;
+box-shadow: 10px 10px 10px black;}
+ 
+
+.gin{width: 10vw;
+height: 10vw;
+background:blue;
+display: inline-block;
+border-radius: 5vw;
+border: .5vw black solid;
+box-shadow: 10px 10px 10px black;
+margin-bottom: 3vw;}
+ /* relative */
+.padre {
+width: 30vw;
+height: 30vw;
+margin: 5vw;
+position: relative;
+background: brown;}
+
+
+.hijo{
+width: 15vw;
+height: 15vw;
+position: relative;
+z-index: -1;
+top: -3vw;
+left: -3vw;
+background: cadetblue;}
+
+
+.hyperion{
+    z-index: 0;
+    width: 14vw;
+    height: 14vw;
+    margin: 5vw;
+    border-radius: 15vw;
+    display: inline-block;}
+    
+#flagtrap {background: red;}
+
+#claptrap{background: royalblue;}
+
+#shadowtrap {background: sandybrown;}
+
+#clapdog {background: skyblue;}
+
+
+.annie{ line-height: 9vw;
+        font-size: 4vw;
+        color: snow;
+        display: inline-block;
+        position: relative;
+        top: 2.5vw;
+        left: 2.5vw;
+        text-align: center;
+        height: 9vw;
+        width: 9vw;
+        background: rgb(48, 40, 40);
+        border-radius: 15vw;
+        z-index: 1;
+        text-decoration:none;
+
+    }
+    /*absolute */
+.dogma{display: block;
+        background: green;
+        position: absolute;}
+.box {
+        font-size: 2vw; 
+        height: 15vw;
+        width: 15vw;}
+
+
+        

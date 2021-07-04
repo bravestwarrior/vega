@@ -1,0 +1,13 @@
+.video { width: 90vw; }
+.image { width: 40vw; }
+.text { width: 90vw; }
+body {padding-top: 5vw;}
+.barra {width: 100%;
+    background-color:cornflowerblue;
+    height: 5vw;
+    margin-top: -5vw;
+    position: fixed;}
+    .logo {height: 5vw;
+    padding-left: 1vw;}
+#nombre {margin-left: 2vw ;}
+
