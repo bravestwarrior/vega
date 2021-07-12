@@ -3,7 +3,7 @@
 .text { width: 90vw; }
 body {padding-top: 5vw;}
 .barra {width: 100%;
-    background-color:cornflowerblue;
+    background-color:rgb(135, 138, 143);
     height: 5vw;
     margin-top: -5vw;
     position: fixed;}
@@ -11,3 +11,59 @@ body {padding-top: 5vw;}
     padding-left: 1vw;}
 #nombre {margin-left: 2vw ;}
 
+.cont {
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 50px;
+    border: 4px solid rgb(158, 154, 154);
+    background: rgb(180, 175, 153);
+    width: 50%}
+    .cont{width: 50%;}
+.cont img {
+    float: left;
+    width: 300px;
+    margin-right: 2%;
+    padding: 1%;}
+
+.texto-pseudoelemento::first-line {color: blueviolet;}
+
+
+
+input::placeholder {color: rgb(180, 177, 177) ;}
+
+.caja1{
+    font-size: 3vw;
+    height: 450px;
+    width: 450px;
+    background: lightskyblue;
+    transition: background 1s, width 1s, height 1s;
+
+    display: inline-block;}
+
+.caja1:hover {
+            background: blue;
+            width: 650px ;
+        height: 650px; margin-left: 15px;}
+
+
+.caja2 {background: blue;
+            width: 450px;
+            height: 450px;
+            display: inline-block;
+            transition: background 3s, width;
+            font-size: 3vw;}
+
+        .caja2:active{background: brown;
+        width: 1000px;}
+
+.input-prueba{
+            font-size: 3vw;
+            background: rgb(207, 188, 188);
+            transition: background .5s; }
+.input-prueba:focus{background: white;}
+
+.caja3 {margin: 25px;}
+
+.caja3 b:lang(en) {
+            background: rgb(206, 121, 121);
+            padding: 20px;}
