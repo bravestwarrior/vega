@@ -49,8 +49,8 @@ input::placeholder {color: rgb(180, 177, 177) ;}
 .caja2 {background: blue;
             width: 450px;
             height: 450px;
-            display: inline-block;
-            transition: background 3s, width;
+            display: block;
+            transition: background 3s, width 3s;
             font-size: 3vw;}
 
         .caja2:active{background: brown;
@@ -65,5 +65,13 @@ input::placeholder {color: rgb(180, 177, 177) ;}
 .caja3 {margin: 25px;}
 
 .caja3 b:lang(en) {
-            background: rgb(206, 121, 121);
-            padding: 20px;}
+    background: rgb(206, 121, 121);
+    padding: 20px;} 
+
+.before-after {color: blue;}
+.before-after::before {
+        content:"texto anterior ";
+        color: black;}
+.before-after::after {
+        content: " texto posterior";
+        color: red;}
