@@ -1,15 +1,91 @@
-.video { width: 90vw; }
-.image { width: 40vw; }
-.text { width: 90vw; }
+
+#barra{
+    margin-top: 10px;
+    margin-left: 10px;
+	display: inline-block;
+	width:60px;
+	height: 45px;
+	position: relative;
+	z-index: 2;}
+	
+#barra span{
+	width: 100%;
+	height: 8px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: #fff;
+	transition: all 0.25s ease; 
+	transform-origin : 0px 100%;}
+#barra span:nth-child(1){top: 0}
+#barra span:nth-child(2){top: calc(50% - 4px);}
+ 
+#barra span:nth-child(3){bottom: 0;}
+
+#nav_barra{position: fixed;
+	       top: 0;
+	       bottom: 0;
+	       left:-300px; 
+	       width: 300px;
+	       z-index: 1;
+	       padding: 90px 30px 30px;
+	       background: #6890db;
+	       opacity: 0;
+           transition: all 0.75s ease;
+           font-size: 1.2em;
+           overflow-y: auto;}
+ 
+#nav_barra a{
+	display:block;
+	text-decoration: none;
+	padding: 10px;
+	color: rgba(255,255,255,0.75);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	transition: all ease 0.25s;
+}
+ 
+#nav_barra a:hover{
+	color: rgba(255,255,255,1);
+	border-bottom-color:rgba(255,255,255,0.4);}
+
+.visible_menu span:nth-child(1){
+	transform: rotate(45deg) translate(-2px,1px); 
+}
+ 
+.visible_menu span:nth-child(2){
+	opacity: 0;
+}
+ 
+.visible_menu span:nth-child(3){
+	transform: rotate(-45deg) translate(-3px,3px);}
+	
+.visible_menu #nav_barra{
+	left: 0;
+	opacity: 1;}
+
+.visible_menu #content{
+    transform: translateX(260px);}
+
+.video { width: 90vw;}
+
+.calamardo img {width: 250px;
+                height: 500px;
+                border: 1px solid red; 
+                display:inline-flexbox;
+                object-fit:cover;
+                object-position: right;}
+
+.text { width: 90vw;}
+
 body {padding-top: 5vw;}
+
 .barra {width: 100%;
-    background-color:rgb(135, 138, 143);
-    height: 5vw;
-    margin-top: -5vw;
-    position: fixed;}
-    .logo {height: 5vw;
-    padding-left: 1vw;}
-#nombre {margin-left: 2vw ;}
+        background-color:rgb(93, 126, 214);
+        height: 5vw;
+        margin-top: -5vw;
+        position: fixed;}
+
+#nombre {margin-left: 2vw;}
 
 .cont {
     font-size: 25px;
@@ -18,7 +94,9 @@ body {padding-top: 5vw;}
     border: 4px solid rgb(158, 154, 154);
     background: rgb(180, 175, 153);
     width: 50%}
-    .cont{width: 50%;}
+
+.cont{width: 50%;}
+
 .cont img {
     float: left;
     width: 300px;
@@ -33,45 +111,52 @@ input::placeholder {color: rgb(180, 177, 177) ;}
 
 .caja1{
     font-size: 3vw;
-    height: 450px;
-    width: 450px;
+    height: 600px;
+    width: 600px;
     background: lightskyblue;
-    transition: background 1s, width 1s, height 1s;
+    transition: background 1.5s, width 1.5s;
 
     display: inline-block;}
 
 .caja1:hover {
             background: blue;
-            width: 650px ;
-        height: 650px; margin-left: 15px;}
+            width: 1000px ;}
 
 
-.caja2 {background: blue;
-            width: 450px;
-            height: 450px;
-            display: block;
-            transition: background 3s, width 3s;
-            font-size: 3vw;}
+.caja2 {
+        background: blue;
+        width: 600px;
+        height: 600px;
+        display: block;
+        transition: background 1.5s, width 1.5s;
+        font-size: 3vw;}
 
-        .caja2:active{background: brown;
-        width: 1000px;}
+.caja2:active{background: brown;
+              width: 1000px;}
 
-.input-prueba{
-            font-size: 3vw;
-            background: rgb(207, 188, 188);
-            transition: background .5s; }
+.input-prueba{font-size: 3vw;
+              background: rgb(207, 188, 188);
+              transition: background .5s;}
+
 .input-prueba:focus{background: white;}
 
 .caja3 {margin: 25px;}
 
-.caja3 b:lang(en) {
-    background: rgb(206, 121, 121);
-    padding: 20px;} 
+.caja3 b:lang(en) {background: rgb(206, 121, 121);
+                   padding: 20px;} 
 
 .before-after {color: blue;}
-.before-after::before {
-        content:"texto anterior ";
-        color: black;}
-.before-after::after {
-        content: " texto posterior";
-        color: red;}
+.before-after::before {content:"texto anterior ";
+                       color: black;}
+.before-after::after {content: " texto posterior";
+                      color: red;}
+
+.before-after::selection{color: rgb(60, 60, 221); 
+                         background-color: rgb(6, 6, 6);}
+
+.cursor {margin: 25px;
+         width: 250px;
+         height: 250px;
+         border:2px black solid;
+         background-color: blue;
+         cursor: pointer;}

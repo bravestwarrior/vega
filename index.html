@@ -9,32 +9,42 @@
     <meta name="description" content="pagina de prueba">
     <meta name="robots" content="index">
     <meta name="robots" content="follow">  
-    
+    <script src="/catherine/jquery.js"> </script>
+    <script type="text/javascript">
+	$( document ).ready(function() {
+		$('#barra').click(function(){ 
+		   $('body').toggleClass('visible_menu');
+		 })
+	});
+</script>
+
     <title>vega</title>
-    <header>
-        <div class="barra">
-            <section>
-                <figure>
-                <a href="index.html"> 
-                    <img src="../connie/starbucks-logo-4.png" class="logo" alt=""  >
-                 </a>
-                </figure>
-            </section>
-        </div>
-    <nav><ul>
-        
-        <li><a href="index.html">index</a></li>
-        <li> <a href="sonia/beta.html"  >beta </a></li>
-        <li> <a href="sonia/delta.html" >delta</a></li>
-        <li> <a href="sonia/gamma.html" >gamma</a></li>
-        <li><a href="#imagen">imagen</a></li>
-        <li><a href="#video">video</a></li>
-        <li><a href="#audio">audio</a></li>
-    </ul></nav></header> 
+
+    
     
 </head>
 <body>
-   
+    <div class="barra">
+        <header> <a href="#" id="barra"> 
+             <span></span>
+             <span></span>
+             <span></span>
+         </header></a>
+         <nav id="nav_barra">
+             <ul>
+                 <li><a href="index.html">index</a></li>
+                 <li><a href="sonia/beta.html"  >beta </a></li>
+                 <li><a href="sonia/delta.html" >delta</a></li>
+                 <li><a href="sonia/gamma.html" >gamma</a></li>
+                 <li><a href="#imagen">imagen</a></li>
+                 <li><a href="#video">video</a></li>
+                 <li><a href="#audio">audio</a></li>
+             </ul>
+         </nav>
+         <section id="content">
+            
+         </section>
+     </div>   
     <center><h1>holaaa</h1></center> <br>
     <b> <a href="https://www.youtube.com" target="_blank">hey</a> </b><br>
     <b><a href="delta.html">heya</a></b>
@@ -47,10 +57,19 @@
     <li>vega</li>
     <li>krieg</li> </ul>
 <br>
-<section  >
+<section  class="images">
 <h3 id="imagen">imagen</h3>
-<figure>
- <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" class="image" > 
+<figure class="calamardo">
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" >
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" >
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" > 
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" >
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" > 
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" > 
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" > 
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" > 
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" > 
+ <img src="connie/EbIIrZGWkAQl5Ks.jpg" alt="calamardo" title="calamardo" >  
 </figure>
 </section>
 
@@ -126,5 +145,6 @@
         </div>
       <br>
       <h4 class="before-after">texto original</h4>
-</body>
+    <div class="cursor"></div>    
+    </body>
 </html>
